@@ -3,7 +3,7 @@
     padding: 0;
 }
 .container{
-    max-width:950px;
+    width:950px;
     height: 600px;
     overflow: hidden;
     border: 10px solid peachpuff;
@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     width: 900px;
+    height: 50px;
     justify-content: space-between;
 }
 .text{
@@ -52,7 +53,7 @@
     transition: all ease .5s;
 }
 .ar:active{
-    border: 5px solid palevioletred;
+    border: 2px solid palevioletred;
     transition: all .1s;
     cursor:grab;
 }
@@ -80,4 +81,58 @@ input[name="knop"]{
 }
 #knop4:checked ~ .s1 {
     margin-left:-75%;
+}
+@media(max-width:850px){
+    .container{
+        width:750px ;
+        height:500px ;
+        margin: 20px;
+    }
+    .navig-text{
+        width: 800px;
+        margin: 20px;
+    }
+}
+@media(max-width:650px){
+    .container{
+        width:550px ;
+        height:300px ;
+        margin: 20px;
+    }
+    .navig{
+        margin-left: 150px;
+    }
+    .navig-text{
+        width: 600px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+    .text{
+        margin-left: -150px;
+    }
+}
+@media(max-width:420px){
+    .container{
+        margin: auto;
+        width:185px ;
+        height:100px ;
+    }
+    .navig-text{
+        width: 400px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text{
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    .navig{
+        margin-left: 100px;
+    }
+    .ar{
+        width: 15px;
+        height: 15px;
+
+    }
 }
