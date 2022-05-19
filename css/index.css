@@ -3,10 +3,11 @@
     padding: 0;
 }
 .container{
-    width: 1100px;
+    width:950px;
     height: 600px;
     overflow: hidden;
-    border: 10px solid black;
+    border: 10px solid peachpuff;
+    border-radius: 10px;
 }
 .slider{
     position:absolute;
@@ -14,26 +15,35 @@
     left:50%;
     transform: translate(-50%, -50%);
 }
+.text{
+    position:absolute;
+    margin-top:42%;
+    left:25%;
+    font-size: 20px;
+}
 .navig{
     position:absolute;
-    bottom: 15px;
-    left:50%;
+    margin-top:42%;
+    left:70%;
     transform: translateX(-50%);
     display: flex;
 }
-.slide img{
+.img{
     width: 100%;
     height: 100%;
 }
 .ar{
-    height: 10px;
+    height: 30px;
     width: 30px;
     margin: 8px;
     cursor: pointer;
     background-color:blanchedalmond;
     opacity: .8;
-    border-radius: 10px;
-    transition: all .3s ease;
+    border-radius:50px;
+    transition: all ease .3s;
+}
+.slid{
+    transition: all ease .5s;
 }
 .ar:hover{
     opacity:1;
@@ -48,18 +58,15 @@ input[name="knop"]{
     height: 100%;
     display: flex;
 }
-#knop1:checked ~ .s1{
+#knop1:checked ~ .s1 {
     margin-left: 0;
 }
-#knop2:checked ~ .s1{
+#knop2:checked ~ .s1 {
     margin-left: -25%;
 }
-#knop3:checked ~ .s1{
+#knop3:checked ~ .s1 {
     margin-left: -50%;
 }
-#knop4:checked ~ .s1{
+#knop4:checked ~ .s1 {
     margin-left:-75%;
-}
-#knop5:checked ~ .s1{
-    margin-left:-100%;
 }
