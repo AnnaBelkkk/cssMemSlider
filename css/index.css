@@ -48,15 +48,18 @@ input[name="knop"]{
     height: 100%;
     display: flex;
 }
-#1:checked ~ .s1{
+#knop1:checked ~ .s1{
     margin-left: 0;
 }
-#2:checked ~ .s1{
+#knop2:checked ~ .s1{
     margin-left: -25%;
 }
-#3:checked ~ .s1{
+#knop3:checked ~ .s1{
     margin-left: -50%;
 }
-#3:checked ~ .s1{
+#knop4:checked ~ .s1{
     margin-left:-75%;
+}
+#knop5:checked ~ .s1{
+    margin-left:-100%;
 }
