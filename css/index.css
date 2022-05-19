@@ -3,47 +3,58 @@
     padding: 0;
 }
 .container{
-    width:950px;
+    max-width:950px;
     height: 600px;
     overflow: hidden;
     border: 10px solid peachpuff;
     border-radius: 10px;
+    margin:auto;
+    margin-top: 150px;
 }
 .slider{
-    position:absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    margin:auto;
+    margin-top: 150px;
+    max-width: inherit;
+}
+.navig-text{
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
 }
 .text{
-    position:absolute;
-    margin-top:42%;
-    left:25%;
     font-size: 20px;
 }
+.t{
+    transition: all ease .5s;
+}
 .navig{
-    position:absolute;
-    margin-top:42%;
-    left:70%;
     transform: translateX(-50%);
     display: flex;
 }
 .img{
     width: 100%;
-    height: 100%;
+    height: 105%;
 }
 .ar{
     height: 30px;
     width: 30px;
     margin: 8px;
-    cursor: pointer;
+    cursor:grab;
     background-color:blanchedalmond;
     opacity: .8;
     border-radius:50px;
-    transition: all ease .3s;
+    transition: all ease .5s;
 }
 .slid{
     transition: all ease .5s;
+}
+.ar:active{
+    border: 5px solid palevioletred;
+    transition: all .1s;
+    cursor:grab;
 }
 .ar:hover{
     opacity:1;
@@ -54,7 +65,7 @@ input[name="knop"]{
     visibility:hidden;
 }
 .sliders{
-    width: 500%;
+    width: 495%;
     height: 100%;
     display: flex;
 }
